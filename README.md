@@ -47,7 +47,7 @@ Desktop View:
 
 Mobile View:
 ![Part 3 Mobile](screenshots/part3-mobile.png)
-(screenshots/part3-add.png)
+![Part 3 Add](screenshots/part3-add.png)
 
 ---
 

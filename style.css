@@ -64,7 +64,7 @@ h3 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .custom-box {
-    width: calc(50% - 8px); /* Two boxes fit in one row */
+    width: calc(50% - 8px); 
   }
   .box-3 {
     width: 100%; 
