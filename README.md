@@ -1,59 +1,121 @@
-# Assignment 3: Responsive Web Design
+# Assignment: HTML and Bootstrap Forms
 
 **Name:** Seitkapar Magzhan  
 **Group:** IT-2501  
+**Subject:** Web Technologies
 
----
 ## Description
 
-This assignment focuses on creating responsive web pages using CSS Media Queries and the Bootstrap 5 Grid system. The main goal was to design layouts that automatically adapt to different screen sizes-desktop, tablet, and mobile-while learning how to work with Bootstrap's 12-column grid and navigation components
-## Tasks
+In this assignment, I created different forms using HTML and Bootstrap.
+I used HTML5 validation to check user input and Bootstrap to make the forms look better.
 
-### Part 1. Media Queries
- **Task 0. Responsive Typography:** Made heading and paragraph text resize dynamically using CSS media queries (smaller for mobile, medium for tablet, larger for desktop).
- **Task 1. Responsive Layout with Media Queries:** Created 3 colored boxes using flexbox and custom (@media) rules without Bootstrap. On desktop they sit side-by-side, on tablet two go on the first row and one below, and on mobile they stack vertically
+The project contains 5 tasks divided into 3 parts.
 
-### Part 2. Bootstrap Grid System
- **Task 2. Bootstrap Responsive Columns:** Built a layout with Bootstrap 12-column grid system using (col-12 col-md-6 col-lg-4) to automatically change column arrangements across screen sizes.
- **Task 3. Bootstrap Navigation Bar:** Added a navbar with a logo on the left and links on the right, which collapses into a working hamburger menu on small viewports
+## Part 1. Basic HTML Forms
 
-### Part 3. Combined Project
- **Task 4. Responsive Portfolio Page:** Assembled a full portfolio layout containing the navbar, a left side with project cards, a right sidebar with personal info, and a footer. Added CSS media queries for fine-tuning margins and font sizing
+### Task 0. Simple Contact Form
 
----
+I created a simple contact form using HTML.
 
-## Screenshots
+The form has:
+- Name input
+- Email input
+- Message textarea
+- Submit button
 
-### Part 1 (Media Queries)
-Desktop View:
-![Part 1 Desktop](screenshots/part1-desktop.png)
+I also used labels for each input field.
 
-Tablet View:
-![Part 1 Tablet](screenshots/part1-tablet.png)
+### Task 1. HTML5 Validation
 
-Mobile View:
-![Part 1 Mobile](screenshots/part1-mobile.png)
+I added HTML5 validation to the contact form.
 
-### Part 2 (Bootstrap Grid)
-Desktop View:
-![Part 2 Desktop](screenshots/part2-desktop.png)
+I used:
+- required - makes the field required
+- type="email" - checks email format
+- maxlength="200" - limits the message to 200 characters
 
-Mobile View:
-![Part 2 Mobile](screenshots/part2-mobile.png)
+The browser checks the fields when the user clicks Submit.
 
-### Part 3 (Portfolio Page)
-Desktop View:
-![Part 3 Desktop](screenshots/part3-desktop.png)
+### Screenshot - Task 0 & Task 1
 
-Mobile View:
-![Part 3 Mobile](screenshots/part3-mobile.png)
-![Part 3 Add](screenshots/part3-add.png)
+![Task 0 and Task 1](screenshots/task1.png)
 
----
 
-## Summary
+## Part 2. Bootstrap Forms
 
- Set up basic HTML elements and connected Bootstrap 5 CDN along with custom style.css
- Wrote CSS media queries to control typography scaling and box layouts for 768px and 992px breakpoints
- Used Bootstrap grid utility classes to make project cards and sidebar wrap correctly
- Checked all views using DevTools device mode to make sure everything looks clear and doesn't break on small screens
+### Task 2. Bootstrap Form Styling
+
+I created another contact form using Bootstrap.
+
+I used:
+- form-control for input fields
+- form-label for labels
+- row and col-md-6 for layout
+- btn btn-primary for the Submit button
+
+Bootstrap helps make the form responsive.
+
+### Task 3. Bootstrap Validation
+
+I added Bootstrap validation to the form.
+
+I used:
+- needs-validation
+- valid-feedback
+- invalid-feedback
+- was-validated
+
+I also used JavaScript to check the form when the Submit button is clicked.
+
+If the input is empty or incorrect, the form shows an error message.
+
+If the input is correct, it shows a success message.
+
+### Screenshot - Task 2 & Task 3
+
+![Task 2 and Task 3](screenshots/task2.png)
+
+
+## Part 3. Advanced Form Project
+
+### Task 4. Registration Form
+
+I created a registration form using HTML and Bootstrap.
+The form includes First Name; Last Name;Email;Password; Confirm Password; Gender or radio button; Hobbies(checkboxes); Country (dropdown list)
+; Submit button
+; Reset button
+
+I used Bootstrap Grid to arrange the fields.
+
+I also added validation:
+- Required fields cannot be empty
+- Email must have a valid format
+- Password must contain at least 6 characters
+- Country must be selected
+
+The Reset button clears the form.
+
+### Screenshot - Task 4
+
+![Task 4](screenshots/task4.png)
+
+
+## Work Process
+
+First, I created a simple HTML contact form with input fields and labels.
+
+Then I added HTML5 validation using required, type and maxlength.
+
+After that, I used Bootstrap classes to style the second contact form and make it responsive.
+
+Next, I added validation messages using Bootstrap and JavaScript.
+
+Finally, I created a registration form with different input types, validation and Submit and Reset buttons.
+
+I tested the forms in my browser.
+
+## Conclusion
+
+In this assignment, I learned how to create HTML forms, use different input types and add validation.
+
+I also learned how to use Bootstrap to style forms and make them responsive.

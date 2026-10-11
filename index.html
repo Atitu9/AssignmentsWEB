@@ -1,153 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment #3 - Responsive Web Design</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Лабораторная работа: Формы</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand font-weight-bold" href="#">Seitkapar Magzhan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#part1">Part 1 (Media Queries)</a></li>
-            <li class="nav-item"><a class="nav-link" href="#part2">Part 2 (Bootstrap Grid)</a></li>
-            <li class="nav-item"><a class="nav-link" href="#part3">Part 3 (Portfolio)</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="container my-4">
-    <section id="part1" class="mb-5 p-4 border rounded bg-light">
-      <h2 class="mb-3">Part 1. Media Queries</h2>
-      <article class="task-block mb-4">
-        <h3>Task 0. Responsive Typography</h3>
-        <p class="responsive-text">Resize the browser window to see this text change its font size On mobile screens it is small, on tablets it is medium, and on desktop screens it becomes larger</p>
-      </article>
-      <hr/>
-      <article class="task-block mt-4">
-        <h3>Task 1. Responsive Layout (Pure CSS Media Queries)</h3>
-        <p>Three boxes arranged using CSS Flexbox and Media Queries (No Bootstrap grid used here):</p>
-        <div class="custom-box-container">
-          <div class="custom-box box-1">
-            <h4>Box 1</h4>
-            <p>Desktop: 1/3 width | Tablet: 1/2 width | Mobile: 100% width</p>
-          </div>
-          <div class="custom-box box-2">
-            <h4>Box 2</h4>
-            <p>Desktop: 1/3 width | Tablet: 1/2 width | Mobile: 100% width</p>
-          </div>
-          <div class="custom-box box-3">
-            <h4>Box 3</h4>
-            <p>Desktop: 1/3 width | Tablet: full row below | Mobile: 100% width</p>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section id="part2" class="mb-5 p-4 border rounded bg-light">
-      <h2 class="mb-3">Part 2. Bootstrap Grid System</h2>
-      <article class="task-block">
-        <h3>Task 2. Bootstrap Responsive Columns</h3>
-        <p>Built using Bootstrap 12-column grid system (<code>col-12 col-md-6 col-lg-4</code>):</p>
-        <div class="row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="p-3 bg-primary text-white rounded text-center">
-              <h5>Column 1</h5>
-              <p class="mb-0">Desktop: 4 cols | Tablet: 6 cols | Mobile: 12 cols</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="p-3 bg-secondary text-white rounded text-center">
-              <h5>Column 2</h5>
-              <p class="mb-0">Desktop: 4 cols | Tablet: 6 cols | Mobile: 12 cols</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-12 col-lg-4">
-            <div class="p-3 bg-success text-white rounded text-center">
-              <h5>Column 3</h5>
-              <p class="mb-0">Desktop: 4 cols | Tablet: 12 cols | Mobile: 12 cols</p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section id="part3" class="mb-5 p-4 border rounded bg-white shadow-sm">
-      <h2 class="mb-4 text-center">Part 3. Combined Portfolio Page</h2>
-      <div class="row g-4">
-        <div class="col-12 col-lg-8">
-          <h3 class="mb-3">My Projects</h3>
-          <div class="row g-3">
-            <div class="col-12 col-md-6">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Interactive 3D Particle System</h5>
-                  <p class="card-text">A real-time 3D particle visualization built with Three.js and MediaPipe for hand gesture recognition.</p>
-                  <span class="badge bg-primary">JavaScript</span>
-                  <span class="badge bg-dark">Three.js</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Personal Webpage</h5>
-                  <p class="card-text">First web development assignment showcasing clean semantic HTML, custom styling, and GitHub Pages deployment</p>
-                  <span class="badge bg-danger">HTML</span>
-                  <span class="badge bg-info text-dark">CSS</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Python Scripts & Algorithms</h5>
-                  <p class="card-text">Collection of Python algorithms, discrete mathematics implementations, and problem-solving exercises</p>
-                  <span class="badge bg-warning text-dark">Python</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">C# Console Exercises</h5>
-                  <p class="card-text">Console applications demonstrating OOP concepts, structured routines, and execution via .NET SDK.</p>
-                  <span class="badge bg-secondary">C#</span>
-                  <span class="badge bg-purple">.NET</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <aside class="col-12 col-lg-4">
-          <div class="card p-3 bg-light">
-            <h4>About Me</h4>
-            <p class="mb-2"><strong>Name:</strong> Seitkapar Magzhan</p>
-            <p class="mb-2"><strong>Group:</strong> IT-2501</p>
-            <p class="mb-3">Computer Science student at Astana IT University. Passionate about coding in Python, software engineering, and exploring new technologies.</p>
-            <hr/>
-            <h5>Contact Details</h5>
-            <ul class="list-unstyled mb-0">
-              <li><strong>Email:</strong> student@astanait.edu.kz</li>
-              <li><strong>GitHub:</strong> github.com/Atitu9</li>
-              <li><strong>Location:</strong> Astana, Kazakhstan</li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <div class="container"><p class="mb-0"> 2026 Seitkapar Magzhan | Group IT-2501. All rights reserved.</p>
+  
+<div class="container mt-4">
+  <h1>Лабораторная работа: Формы</h1>
+  <h3 class="mt-4">Task 0 & 1. Простая форма</h3>
+  <form>
+    <div class="mb-3">
+      <label for="basicName" class="form-label">Name</label>
+      <input type="text" id="basicName" name="name" class="form-control" required>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="mb-3">
+      <label for="basicEmail" class="form-label">Email</label>
+      <input type="email" id="basicEmail" name="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="basicMessage" class="form-label">Message</label>
+      <textarea id="basicMessage" name="message" class="form-control" maxlength="200" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <hr class="my-4">
+  <h3>Task 2 & 3. Bootstrap Форма с валидацией</h3>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-6">
+      <label for="btName" class="form-label">Name</label>
+      <input type="text" class="form-control" id="btName" required>
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Name is required.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="btEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="btEmail" required>
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Email is required.</div>
+    </div>
+    <div class="col-12">
+      <label for="btMessage" class="form-label">Message</label>
+      <textarea class="form-control" id="btMessage" rows="3" required></textarea>
+      <div class="invalid-feedback">Message is required.</div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+  <hr class="my-4">
+  <h3>Task 4. Registration Form</h3>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-6">
+      <label for="regFirstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="regFirstName" required>
+      <div class="invalid-feedback">Required field.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="regLastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="regLastName" required>
+      <div class="invalid-feedback">Required field.</div>
+    </div>
+    <div class="col-12">
+      <label for="regEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="regEmail" required>
+      <div class="invalid-feedback">Enter valid email.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="regPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="regPassword" minlength="6" required>
+      <div class="invalid-feedback">Minimum 6 characters.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="regConfirmPassword" class="form-label">Confirm Password</label>
+      <input type="password" class="form-control" id="regConfirmPassword" required>
+      <div class="invalid-feedback">Passwords must match.</div>
+    </div>
+    <div class="col-12">
+      <label class="form-label d-block">Gender</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+        <label class="form-check-label" for="genderMale">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+        <label class="form-check-label" for="genderFemale">Female</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <label class="form-label d-block">Hobbies</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="hobbyReading" value="reading">
+        <label class="form-check-label" for="hobbyReading">Reading</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="hobbyMusic" value="music">
+        <label class="form-check-label" for="hobbyMusic">Music</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="hobbyGames" value="games">
+        <label class="form-check-label" for="hobbyGames">Games</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="regCountry" class="form-label">Country</label>
+      <select class="form-select" id="regCountry" required>
+        <option selected disabled value="">Choose...</option>
+        <option value="KZ">Kazakhstan</option>
+        <option value="RU">Russia</option>
+        <option value="US">USA</option>
+      </select>
+      <div class="invalid-feedback">Select a country.</div>
+    </div>
+    <div class="col-12 mt-3 mb-5">
+      <button class="btn btn-primary" type="submit">Submit</button>
+      <button class="btn btn-secondary" type="reset">Reset</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 </body>
 </html>
