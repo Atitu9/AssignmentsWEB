@@ -8,7 +8,7 @@
 
 In this assignment, I created different forms using HTML and Bootstrap.
 I used HTML5 validation to check user input and Bootstrap to make the forms look better.
-The project contains 5 tasks divided into 3 parts.
+The project contains 5 tasks divided into 3 parts
 
 ## Part 1. Basic HTML Forms
 
@@ -16,7 +16,7 @@ The project contains 5 tasks divided into 3 parts.
 
 I created a simple contact form using HTML.
 The form has: Name input and Email input and  Message textarea and Submit button
-I also used labels for each input field.
+I also used labels for each input field
 
 ### Task 1. HTML5 Validation
 
