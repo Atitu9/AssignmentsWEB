@@ -57,7 +57,7 @@ I also used JavaScript to check the form when the Submit button is clicked
 If the input is empty or incorrect, the form shows an error message
 If the input is correct, it shows a success message
 
-! (screenshots/valid.png)
+![Task 0 and Task 1](screenshots/valid.png)
 
 ### Screenshot - Task 2 & Task 3
 
