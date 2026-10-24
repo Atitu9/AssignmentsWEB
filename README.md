@@ -1,98 +1,58 @@
-# Assignment: HTML and Bootstrap Forms
+Assignment-5 from Maga
 
-**Name:** Seitkapar Magzhan  
-**Group:** IT-2501  
-**Subject:** Web Technologies
+Name: Seitkapar Magzhan
+Group: IT-2501
+Subject: Web Technologies
 
-## Description
+About My Project
+In this assignment, I created a simple personal profile website using HTML, CSS, and JavaScript.The website shows my profile information, calculates my age, and allows me to update my profile. I also added buttons to add and remove hobbies from a list. I tried to keep the code simple because I am still learning JavaScript
+Part 1: Profile Object, Data Types and Arithmetic
+Task 1: Personal Info Object
+I created a JavaScript object called userProfile. It contains my name, birth year, developer status, and hobbies
+I used four data types:
+* String – my name
+* Number – my birth year
+* Boolean – my developer status
+* Array – my hobbies
 
-In this assignment, I created different forms using HTML and Bootstrap.
-I used HTML5 validation to check user input and Bootstrap to make the forms look better.
-The project contains 5 tasks divided into 3 parts
+![Part 1](screenshots/part1.png)
 
-## Part 1. Basic HTML Forms
+Task 2: Arithmetic Calculations
+I used JavaScript to calculate my age based on the current year and my birth year.And also calculated my age in months and the total number of hobbies in my array.After that i used arithmetic operators and the .length property to get these values
+![Part 1.2](screenshots/part1_2.png)
 
-### Task 0. Simple Contact Form
+Part 2: Form Input and Event Responses
+Task 3: HTML Form Setup
+I created a form with two input fields:
+* Username
+* Birth Year
 
-I created a simple contact form using HTML.
-The form has: Name input and Email input and  Message textarea and Submit button
-I also used labels for each input field
+I also added a button called Create / Update Profile
 
-### Task 1. HTML5 Validation
+![Part 2](screenshots/part2.png)
 
-I added HTML5 validation to the contact form
-I used:
-- required - makes the field required
-- type="email" - checks email format
-- maxlength="200" - limits the message to 200 characters
-The browser checks the fields when the user clicks Submit.
+Task 4: Event Listener
+I used addEventListener() to handle the form submission.When the user enters a name and birth year and clicks the button, JavaScript updates the userProfile object and displays the new information on the page
+I also added simple validation to check the entered values
 
-### Screenshot - Task 0 & Task 1
+![Part 2.2](screenshots/part2_2.png)
 
-![Task 0 and Task 1](screenshots/task1.png)
+Part 3: DOM List Manipulation
 
+Task 5: Creating and Removing Elements
 
-## Part 2. Bootstrap Forms
+I created a hobbies list using HTML <ul> and <li> elements
+I added two buttons:
 
-### Task 2. Bootstrap Form Styling
+* Add Item – adds a new hobby to the list
+* Remove Item – removes the last hobby from the list
 
-I created another contact form using Bootstrap.
-I used:
-- form-control for input fields
-- form-label for labels
-- row and col-md-6 for layout
-- btn btn-primary for the Submit button
-Bootstrap helps make the form responsive.
+I used document.createElement() and appendChild() to add new elements. I used remove() to delete an element
+The hobbies array and the list are updated together, so the hobbies count changes automatically
 
-### Task 3. Bootstrap Validation
+![Part 3](screenshots/part3.png)
 
-I added Bootstrap validation to the form
-I used:
-- needs-validation
-- valid-feedback
-- invalid-feedback
-- was-validated
+![Part 3.3](screenshots/part3_2.png)
 
-I also used JavaScript to check the form when the Submit button is clicked
-If the input is empty or incorrect, the form shows an error message
-If the input is correct, it shows a success message
-
-![Task 0 and Task 1](screenshots/valid.png)
-
-### Screenshot - Task 2 & Task 3
-
-![Task 2 and Task 3](screenshots/task2.png)
-
-
-## Part 3. Advanced Form Project
-
-### Task 4. Registration Form
-
-I created a registration form using HTML and Bootstrap.
-The form includes First Name; Last Name;Email;Password; Confirm Password; Gender or radio button; Hobbies(checkboxes); Country (dropdown list)
-Submit button
-Reset button
-
-I used Bootstrap Grid to arrange the fields and 
-I also added validation:
-- Required fields cannot be empty
-- Email must have a valid format
-- Password must contain at least 6 characters
-- Country must be selected
-
-The Reset button clears the form.
-
-### Screenshot - Task 4
-
-![Task 4](screenshots/task4.png)
-
-
-## Work Process
-
-First, I created a simple HTML contact form with input fields and labels.Then I added HTML5 validation using required, type and maxlength.After that, I used Bootstrap classes to style the second contact form and make it responsive.Next, I added validation messages using Bootstrap and JavaScript.
-Finally, I created a registration form with different input types, validation and Submit and Reset buttons
-I tested the forms in my browser
-
-## Conclusion
-
-In this assignment, I learned how to create HTML forms, use different input types and add validation and I also learned how to use Bootstrap to style forms and make them responsive.It was very useful
+** Summary
+While working on this assignment, I learned how to create objects and use different data types in JavaScript.I practiced arithmetic calculations, HTML forms, and event listeners. I also learned how to find HTML elements and change them using the DOM. At first, some parts of the code were difficult for me, but testing the website helped me understand how everything works. This assignment gave me more practice with JavaScript and helped me understand how to make a web page interactive

@@ -1,142 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maga Lab Work</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Maga Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <marquee class="marquee" behavior="scroll" direction="right" scrollamount="10">
+    <p class="marquee"> Made by Magzhan </p>
+  </marquee>
+<div class="container">
+  <h1>Maga's Personal Profile</h1>
+  <p class="subtitle">Create your profile with me and manage your hobbies</p>
 
-<div class="container mt-4">
-  <h1>Lab Work: Forms from Maga</h1>
-  <h3 class="mt-4">Task 0 & 1. simple form</h3>
-  <form>
-    <div class="mb-3">
-      <label for="basicName" class="form-label">Name</label>
-      <input type="text" id="basicName" name="name" class="form-control" required>
-    </div>
-    <div class="mb-3">
-      <label for="basicEmail" class="form-label">Email</label>
-      <input type="email" id="basicEmail" name="email" class="form-control" required>
-    </div>
-    <div class="mb-3">
-      <label for="basicMessage" class="form-label">Message</label>
-      <textarea id="basicMessage" name="message" class="form-control" maxlength="200" rows="3" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <section class="card">
+    <h2>My Profile</h2>
+    <p><b>Name:</b> <span id="profileName">Magzhan</span></p>
+    <p><b>Birth Year:</b> <span id="profileBirthYear">2006</span></p>
+    <p><b>Developer:</b> <span id="profileDeveloper">Yes</span></p>
+    <p><b>Current Age:</b> <span id="profileAge">20</span></p>
+    <p><b>Age in Months:</b> <span id="profileMonths">240</span></p>
+    <p><b>Hobbies Count:</b> <span id="hobbiesCount">3</span></p>
+    <h3>My Hobbies</h3>
+    <p id="profileHobbies">Programming, Gaming, Music</p>
+  </section>
 
-  <hr class="my-4">
-  <h3>Task 2 & 3. Bootstrap form with validation</h3>
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-6">
-      <label for="btName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="btName" required>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Name is required.</div>
+  <section class="card">
+    <h2>Create / Update Profile</h2>
+      <form id="profileForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your name" required>
+        <label for="birthYear">Birth Year:</label>
+        <input type="number" id="birthYear" placeholder="Enter your birth year"  min="1900" required>
+        <button type="submit">Create / Update Profile</button>
+      </form>
+      <p id="formMessage"></p>
+  </section>
+
+  <section class="card">
+    <h2>My Hobbies List</h2>
+    <ul id="hobbiesList">
+      <li>Programming</li>
+      <li>Gaming</li>
+      <li>Music</li>
+    </ul>
+    <div class="listButtons">
+      <button type="button" id="addButton">Add Item</button>
+      <button type="button" id="removeButton">Remove Item</button>
     </div>
-    <div class="col-md-6">
-      <label for="btEmail" class="form-label">Email</label>
-      <input type="email" class="form-control" id="btEmail" required>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Email is required</div>
-    </div>
-    <div class="col-12">
-      <label for="btMessage" class="form-label">Message</label>
-      <textarea class="form-control" id="btMessage" rows="3" required></textarea>
-      <div class="invalid-feedback">Message is required</div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </div>
-  </form>
-  <hr class="my-4">
-  <h3>Task 4. Registration Form</h3>
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-6">
-      <label for="regFirstName" class="form-label">First Name</label>
-      <input type="text" class="form-control" id="regFirstName" required>
-      <div class="invalid-feedback">Required field</div>
-    </div>
-    <div class="col-md-6">
-      <label for="regLastName" class="form-label">Last Name</label>
-      <input type="text" class="form-control" id="regLastName" required>
-      <div class="invalid-feedback">Required field</div>
-    </div>
-    <div class="col-12">
-      <label for="regEmail" class="form-label">Email</label>
-      <input type="email" class="form-control" id="regEmail" required>
-      <div class="invalid-feedback">Enter valid email</div>
-    </div>
-    <div class="col-md-6">
-      <label for="regPassword" class="form-label">Password</label>
-      <input type="password" class="form-control" id="regPassword" minlength="6" required>
-      <div class="invalid-feedback">Minimum 6 characters</div>
-    </div>
-    <div class="col-md-6">
-      <label for="regConfirmPassword" class="form-label">Confirm Password</label>
-      <input type="password" class="form-control" id="regConfirmPassword" required>
-      <div class="invalid-feedback">Passwords must match</div>
-    </div>
-    <div class="col-12">
-      <label class="form-label d-block">Gender</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
-        <label class="form-check-label" for="genderMale">Male</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
-        <label class="form-check-label" for="genderFemale">Female</label>
-      </div>
-    </div>
-    <div class="col-12">
-      <label class="form-label d-block">Hobbies</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="hobbyReading" value="reading">
-        <label class="form-check-label" for="hobbyReading">Reading</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="hobbyMusic" value="music">
-        <label class="form-check-label" for="hobbyMusic">Music</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="hobbyGames" value="games">
-        <label class="form-check-label" for="hobbyGames">Games</label>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <label for="regCountry" class="form-label">Country</label>
-      <select class="form-select" id="regCountry" required>
-        <option selected disabled value="">Choose...</option>
-        <option value="KZ">Kazakhstan</option>
-        <option value="RU">Russia</option>
-        <option value="US">USA</option>
-      </select>
-      <div class="invalid-feedback">Select a country</div>
-    </div>
-    <div class="col-12 mt-3 mb-5">
-      <button class="btn btn-primary" type="submit">Submit</button>
-      <button class="btn btn-secondary" type="reset">Reset</button>
-    </div>
-  </form>
+    <p id="listMessage"></p>
+  </section>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-(function () {
-  'use strict'
-  var forms = document.querySelectorAll('.needs-validation')
-  Array.prototype.slice.call(forms).forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-</script>
+<script src="script.js"></script>
 </body>
 </html>
