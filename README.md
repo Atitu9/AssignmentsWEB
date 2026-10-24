@@ -4,7 +4,7 @@ Name: Seitkapar Magzhan
 Group: IT-2501
 Subject: Web Technologies
 
-About My Project
+## About My Project
 In this assignment, I created a simple personal profile website using HTML, CSS, and JavaScript.The website shows my profile information, calculates my age, and allows me to update my profile. I also added buttons to add and remove hobbies from a list. I tried to keep the code simple because I am still learning JavaScript
 Part 1: Profile Object, Data Types and Arithmetic
 Task 1: Personal Info Object
@@ -41,9 +41,8 @@ Part 3: DOM List Manipulation
 
 Task 5: Creating and Removing Elements
 
-I created a hobbies list using HTML <ul> and <li> elements
+I created a hobbies list using HTML ul and li elements
 I added two buttons:
-
 * Add Item – adds a new hobby to the list
 * Remove Item – removes the last hobby from the list
 
@@ -54,5 +53,5 @@ The hobbies array and the list are updated together, so the hobbies count change
 
 ![Part 3.3](screenshots/part3_2.png)
 
-** Summary
+## Summary 
 While working on this assignment, I learned how to create objects and use different data types in JavaScript.I practiced arithmetic calculations, HTML forms, and event listeners. I also learned how to find HTML elements and change them using the DOM. At first, some parts of the code were difficult for me, but testing the website helped me understand how everything works. This assignment gave me more practice with JavaScript and helped me understand how to make a web page interactive
