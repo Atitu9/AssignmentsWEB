@@ -1,57 +1,58 @@
-Assignment-5 from Maga
+# Assignment #6 – jQuery 
 
 Name: Seitkapar Magzhan
 Group: IT-2501
 Subject: Web Technologies
 
 ## About My Project
-In this assignment, I created a simple personal profile website using HTML, CSS, and JavaScript.The website shows my profile information, calculates my age, and allows me to update my profile. I also added buttons to add and remove hobbies from a list. I tried to keep the code simple because I am still learning JavaScript
-Part 1: Profile Object, Data Types and Arithmetic
-Task 1: Personal Info Object
-I created a JavaScript object called userProfile. It contains my name, birth year, developer status, and hobbies
-I used four data types:
-* String – my name
-* Number – my birth year
-* Boolean – my developer status
-* Array – my hobbies
 
-![Part 1](screenshots/part1.png)
+In this assignment, I created a simple personal portfolio website using HTML, CSS, and jQuery.I am still learning jQuery, so I tried to keep my code simple and easy to understand.My website has information about me, my skills, photos, social media, and a contact form
 
-Task 2: Arithmetic Calculations
-I used JavaScript to calculate my age based on the current year and my birth year.And also calculated my age in months and the total number of hobbies in my array.After that i used arithmetic operators and the .length property to get these values
-![Part 1.2](screenshots/part1_2.png)
 
-Part 2: Form Input and Event Responses
-Task 3: HTML Form Setup
-I created a form with two input fields:
-* Username
-* Birth Year
+Task 0 – My Portfolio
+I created my portfolio with my name and some information about myself. I also used different jQuery selectors
+![Part 3](screenshots/part0.png)
 
-I also added a button called Create / Update Profile
+Task 1 – About Me
+I added a small section about myself and buttons to hide, show, and toggle information
+![Part 3](screenshots/part1.png)
 
-![Part 2](screenshots/part2.png)
+Task 2 – My Gallery
+I added two pictures and buttons to show and hide them with fade effects.
+![Part 3](screenshots/part2.png)
 
-Task 4: Event Listener
-I used addEventListener() to handle the form submission.When the user enters a name and birth year and clicks the button, JavaScript updates the userProfile object and displays the new information on the page
-I also added simple validation to check the entered values
-
-![Part 2.2](screenshots/part2_2.png)
-
-Part 3: DOM List Manipulation
-
-Task 5: Creating and Removing Elements
-
-I created a hobbies list using HTML ul and li elements
-I added two buttons:
-* Add Item – adds a new hobby to the list
-* Remove Item – removes the last hobby from the list
-
-I used document.createElement() and appendChild() to add new elements. I used remove() to delete an element
-The hobbies array and the list are updated together, so the hobbies count changes automatically
-
+Task 3 – jQuery Effects
+I used Hide, Show, Toggle, Fade In, Fade Out, and Fade Toggle.
 ![Part 3](screenshots/part3.png)
 
-![Part 3.3](screenshots/part3_2.png)
+Task 4 – Sliding Effects
+I created three sections with information. I used Slide Up, Slide Down, and Slide Toggle.
+![Part 3](screenshots/part4.png)
 
-## Summary 
-While working on this assignment, I learned how to create objects and use different data types in JavaScript.I practiced arithmetic calculations, HTML forms, and event listeners. I also learned how to find HTML elements and change them using the DOM. At first, some parts of the code were difficult for me, but testing the website helped me understand how everything works. This assignment gave me more practice with JavaScript and helped me understand how to make a web page interactive
+Task 5 – My Technical Skills
+I created a list of my skills. I can add a new skill, put it at the beginning, or remove a skill.
+![Part 3](screenshots/part5.png)
+
+Task 6 – Social Media
+I added a GitHub link and a button to change the link.
+![Part 3](screenshots/part6.png)
+
+Task 7 – Contact Form
+I created a simple form with Name and Email fields. The information appears on the page.
+![Part 3](screenshots/part7.png)
+
+Task 8 – Skill Animation
+I created three skill bars for HTML, CSS, and JavaScript. When I click the button, the bars move to their percentages.
+![Part 3](screenshots/part8.png)
+
+### Technologies Used
+
+* HTML-to create the website structure
+* CSS-to make the website look better
+* JavaScript-to add basic functionality
+* jQuery- to make buttons and effects work
+
+
+## Summary
+
+While doing this assignment, I learned how to use jQuery selectors, click events, CSS changes, hide and show effects, fade effects, sliding effects, and animations.I also learned how to work with HTML elements using jQuery.This assignment helped me understand jQuery better

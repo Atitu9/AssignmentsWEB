@@ -1,57 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maga Profile</title>
+  <title>jQuery Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
-  <marquee class="marquee" behavior="scroll" direction="right" scrollamount="10">
-    <p class="marquee"> Made by Magzhan </p>
-  </marquee>
-<div class="container">
-  <h1>Maga's Personal Profile</h1>
-  <p class="subtitle">Create your profile with me and manage your hobbies</p>
-
-  <section class="card">
-    <h2>My Profile</h2>
-    <p><b>Name:</b> <span id="profileName">Magzhan</span></p>
-    <p><b>Birth Year:</b> <span id="profileBirthYear">2006</span></p>
-    <p><b>Developer:</b> <span id="profileDeveloper">Yes</span></p>
-    <p><b>Current Age:</b> <span id="profileAge">20</span></p>
-    <p><b>Age in Months:</b> <span id="profileMonths">240</span></p>
-    <p><b>Hobbies Count:</b> <span id="hobbiesCount">3</span></p>
-    <h3>My Hobbies</h3>
-    <p id="profileHobbies">Programming, Gaming, Music</p>
-  </section>
-
-  <section class="card">
-    <h2>Create / Update Profile</h2>
-      <form id="profileForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Enter your name" required>
-        <label for="birthYear">Birth Year:</label>
-        <input type="number" id="birthYear" placeholder="Enter your birth year"  min="1900" required>
-        <button type="submit">Create / Update Profile</button>
-      </form>
-      <p id="formMessage"></p>
-  </section>
-
-  <section class="card">
-    <h2>My Hobbies List</h2>
-    <ul id="hobbiesList">
-      <li>Programming</li>
-      <li>Gaming</li>
-      <li>Music</li>
-    </ul>
-    <div class="listButtons">
-      <button type="button" id="addButton">Add Item</button>
-      <button type="button" id="removeButton">Remove Item</button>
+  <div class="header">
+    <h1>My Portfolio</h1>
+  </div>
+  <div class="container">
+    <div class="box">
+      <h2 id="title">Welcome to My Portfolio</h2>
+      <h3 class="headline">Hello, I am Seitkapar Magzhan</h3>
+      <p>I am an IT student.I am learning programming and web development</p>
+      <p id="greeting">Welcome to my website</p>
+      <button id="changeGreeting">Change Greeting</button>
+      <button id="lightTheme" class="light_button">Light Theme</button>
+      <button id="darkTheme" class="dark_button">Dark Theme</button>
     </div>
-    <p id="listMessage"></p>
-  </section>
-</div>
-<script src="script.js"></script>
+    <div class="box">
+      <h2>About Me</h2>
+      <p>My name is Magzhan. I study IT and want to become a software developer</p>
+      <div id="aboutInfo">
+        <p id="status">Currently learning at university</p>
+        <ul>
+          <li>I like programming</li>
+          <li>I enjoy gaming and music</li>
+          <li>My goal is to become a professional developer</li>
+        </ul>
+      </div>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+      <button id="toggle">Toggle</button>
+    </div>
+    <div class="box">
+      <h2>My Gallery</h2>
+      <img class="galleryImage" src="https://static.kinoafisha.info/k/articles/canvas/1200x630/upload/articles/869633941761.jpg" alt="Bleach">
+      <img class="galleryImage" src="https://avatars.mds.yandex.net/i?id=fec018f8776d494ee6397ff36df5681785414150-10355125-images-thumbs&n=13" alt="Bleach">
+      <br>
+      <button id="fadeIn">Fade In</button>
+      <button id="fadeOut">Fade Out</button>
+      <button id="fadeToggle">Fade Toggle</button>
+    </div>
+    <div class="box">
+      <h2>My Favorite Things</h2>
+      <h3 class="slideTitle">My Favorite Music</h3>
+      <div class="slideInfo">
+        <p>I like listening to music in my free time</p>
+      </div>
+      <h3 class="slideTitle">My Favorite Movie</h3>
+      <div class="slideInfo">
+        <p>I enjoy movies with interesting stories and characters</p>
+      </div>
+      <h3 class="slideTitle">My Favorite Subject</h3>
+      <div class="slideInfo">
+        <p>My favorite subject is Web Technologies because I can create websites</p>
+      </div>
+      <button id="openPanels">Show All</button>
+      <button id="closePanels">Hide All</button>
+    </div>
+    <div class="box">
+      <h2>My Technical Skills</h2>
+      <ul id="skillList">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+      <input type="text" id="skillInput" placeholder="Enter a new skill">
+      <button id="addSkill">Add Skill</button>
+      <button id="prependSkill">Prepend Skill</button>
+      <button id="removeSkill">Remove Skill</button>
+      <p id="skillMessage"></p>
+    </div>
+    <div class="box">
+      <h2>My Social Media</h2>
+      <a id="socialLink" href="https://github.com/" target="_blank">My GitHub</a>
+      <br><br>
+      <button id="changeLink">Change Link</button>
+    </div>
+    <div class="box">
+      <h2>Contact Form</h2>
+      <form>
+        <label>Name:</label><br>
+        <input type="text" id="nameInput" placeholder="Enter your name"><br><br>
+        <label>Email:</label><br>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+      </form>
+      <h3>Your Information:</h3>
+      <p>Name: <span id="nameOutput">-</span></p>
+      <p>Email: <span id="emailOutput">-</span></p>
+    </div>
+    <div class="box">
+      <h2>My Skill Levels</h2>
+      <p>HTML - 90%</p>
+      <div class="bar">
+        <div id="htmlBar"></div>
+      </div>
+      <p>CSS - 75%</p>
+      <div class="bar">
+        <div id="cssBar"></div>
+      </div>
+      <p>JavaScript - 60%</p>
+      <div class="bar">
+        <div id="jsBar"></div>
+      </div>
+      <br>
+      <button id="animateSkills">Animate My Skills</button>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Seitkapar Magzhan | IT-2501 | Assignment #6</p>
+  </div>
 </body>
 </html>

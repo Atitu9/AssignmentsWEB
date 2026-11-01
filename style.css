@@ -1,57 +1,89 @@
 body {
-font-family: Arial, sans-serif;
-background-color: #f0f4f8;
-margin: 0;
-padding: 20px;
-color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    margin: 0;
 }
-marquee {
-  background-color: #2457a7;
-  font-size: 20px;
-  color: white;
-  padding: 10px;
-  border-radius: 30px;
+.header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 .container {
-max-width: 700px;
-margin: 0 auto;
+    width: 85%;
+    margin: 20px auto;
 }
-h1 {
-text-align: center;
-color: #2457a7;
-}
-.subtitle {
-text-align: center;
-margin-bottom: 25px;
-}
-.card {
-background-color: white;
-padding: 20px;
-margin-bottom: 20px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-h2 {
-color: #2457a7;
-margin-top: 0;
-}
-h3 {
-margin-bottom: 10px;
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 button {
-background-color: #12a426;
-color: white;
+    background-color: #4f5258;
+    color: white;
+    border: none;
 }
-button:hover {
-background-color: #d9dadb;
+.light_button {
+    background-color: #f2f2f2;
+    color: #222;
 }
-#removeButton {
-background-color: #d9534f;
+.dark_button {
+    background-color: #222;
+    color: white;
 }
-#removeButton:hover {
-background-color: #c6c2c2;
+input {
+    padding: 9px;
+    margin: 5px 0;
 }
-button {
-width: 100%;
-margin-right: 0;
+.galleryImage {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+}
+.slideTitle {
+    background-color: #e5e7eb;
+    padding: 12px;
+    cursor: pointer;
+}
+.slideInfo {
+    display: none;
+    padding: 10px;
+}
+.bar {
+    width: 100%;
+    background-color: #b20d0d;
+    height: 20px;
+    border-radius: 10px;
+}
+#htmlBar, #cssBar, #jsBar {
+    width: 0;
+    height: 20px;
+    background-color: #117043;
+    border-radius: 10px;
+}
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: #666;
+}
+.dark {
+    background-color: #222;
+    color: white;
+}
+.dark .box {
+    background-color: #333;
+}
+.dark .slideTitle {
+    background-color: #555;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .galleryImage {
+        width: 100%;
+    }
 }
